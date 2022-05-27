@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'KeepCalm';
+    src: url('../fonts/KeepCalm-Medium.ttf') format('truetype');
+}
+
+:root {
+    --cor0: #ffff95;
+    --cor1: #b7ff3f;
+    --cor2: #4fca3f;
+    --cor3: #6ced5f;
+    --cor4: #F3FEF0;
+    --cor5: #378b2c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'KeepCalm', 'Times New Roman', Times, serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url('../img/index/fundoBody.jpg');
+    display: flex;
+    flex-direction: column;
+}
+
+img, iframe, header {
+    user-select: none;
+}
+
+img {
+    width: 100%;
+    margin: 50px 0;
+}
+
+img.transicao {
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+    margin: 0;
+}
+
+/* MENU */
+
+header {
+    background-image: url('../img/index/fundoHeader.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 35px 10px;
+}
+
+nav.desktop ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav.desktop > ul > li {
+    justify-content: space-between;
+    margin: 10px;
+    list-style-type: none;
+}
+
+a#entrar {
+    border: 2.5px solid var(--cor2);
+    border-radius: 10px;
+}
+
+nav.desktop > ul > li > a {
+    padding: 10px;
+    text-align: center;
+    font-family: 'KeepCalm', sans-serif;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: var(--cor2);
+    transition: .4s ease-in;
+}
+
+nav.desktop > ul > li > a:hover {
+    box-shadow: inset -10.5em 0 0 0 var(--cor2), inset 10.5em 0 0 0 var(--cor2);
+    color: white;
+    border-radius: 10px;
+}
+
+nav.desktop > ul > li > a#home:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+nav.mobile, button.menu-button, a#logo {
+    display: none;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+section.posts {
+    margin: 120px 0;
+    display: block;
+    padding: 20px;
+}
+
+div.posts-sobre {
+    margin: auto;
+    max-width: 800px;
+    text-align: justify;
+    font-family: 'KeepCalm';
+    padding: 30px 20px;
+}
+
+div.posts-sobre > h1 {
+    color: var(--cor2);
+    font-size: 3em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 30px 0;
+}
+
+div.posts-sobre p {
+    word-wrap: break-word;
+    font-size: clamp(1em, 1.8em, 2.0em);
+    color: var(--cor2);
+    padding: 3px;
+}
+
+p#author {
+    margin-top: 80px;
+    text-align: end;
+    font-size: 1em;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+p#data {
+    margin-top: 80px;
+    text-align: start;
+    font-size: 1em;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+footer.rodape {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: var(--cor3);
+}
+
+footer div.endereco {
+    padding-top: 20px;
+}
+
+footer.rodape address, p {
+    color: white;
+    font-style: normal;
+}
+
+/* Tela de Celular e tablets */
+@media screen and (max-width: 820px) {
+    header {
+        padding: 20px 0;
+        justify-content: space-between;
+    }
+
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile {
+        width: 100%;
+    }
+
+    nav.mobile li {
+        font-size: 1.2em;
+        text-align: center;
+        list-style-type: none;
+        border-bottom: 1px solid var(--cor2);
+        padding: 16px 0;
+        user-select: none;
+        transition: .4s ease-in;
+    }
+    nav.mobile a#entrar{
+        border: none;
+    }
+    nav.mobile li > a {
+        width: 100%;
+        color: var(--cor2);
+        text-decoration: none;
+        padding: 20px 20px;
+    }
+    nav.mobile li > a:hover {
+        color: white;
+    }
+    nav.mobile li:hover {
+        box-shadow: inset -10.5em 0 0 0 var(--cor2), inset 10.5em 0 0 0 var(--cor2);
+        background-color: var(--cor2);
+        color: white;
+    }
+
+    nav.mobile li:active {
+        background-color: var(--cor2);
+        text-decoration: underline;
+    }
+
+    a#logo {
+        display: block;
+    }
+
+    a#logo > img {
+        width: 150px;
+        margin: 0;
+    }
+
+    button.menu-button {
+        display: block;
+        margin: 0 10px 10px 10px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    button.menu-button i {
+        font-size: 36px;
+        color: var(--cor2);
+        padding: 10px;
+    }
+
+    section.nos {
+        padding: 0;
+    }
+
+    div.nos-sobre p {
+        font-size: 1.4em;
+        text-align: justify;
+    }
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+@font-face {
+    font-family: 'KeepCalm';
+    src: url('../fonts/KeepCalm-Medium.ttf') format('truetype');
+}
+
+:root {
+    --cor0: #ffff95;
+    --cor1: #b7ff3f;
+    --cor2: #4fca3f;
+    --cor3: #6ced5f;
+    --cor4: #F3FEF0;
+    --cor5: #E2FFDF;
+    --cor6: #378b2c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'KeepCalm', 'Times New Roman', Times, serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url('../img/index/fundoBody.jpg');
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+form.noticias-form {
+    margin: auto;
+    padding: 10px;
+    max-width: 500px;
+    background-color: var(--cor4);
+}
+
+form.tabela-form {
+    background-color: var(--cor4);
+    margin: auto;
+    max-width: 1200px;
+}
+
+form>h2 {
+    color: var(--cor2);
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+form>p {
+    color: var(--cor3);
+    margin: 5px;
+    font-style: italic;
+    font-size: 18px;
+    text-align: start;
+}
+
+form.tabela-form>h2>a {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+form.tabela-form>h2 {
+    margin: 100px;
+}
+
+label {
+    color: var(--cor3);
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+input[type="submit"] {
+    background-color: var(--cor2);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-family: 'KeepCalm', Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 14px 20px;
+    display: block;
+    margin: auto;
+}
+
+input[type="text"] {
+    background-color: var(--cor5);
+    border: none;
+    border-radius: 7px;
+    color: var(--cor6);
+    font-family: 'Open Sans', 'KeepCalm', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    height: 40px;
+    width: 100%;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+
+form.tabela-form > div.tabela > div.linha > input[type="date"],
+input[type="time"] {
+    background-color: var(--cor5);
+    border: none;
+    border-radius: 7px;
+    color: var(--cor6);
+    font-family: 'Open Sans', 'KeepCalm', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    height: 40px;
+    width: 200px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+input[type="date"], input[type="time"] {
+    user-select: none;
+}
+
+div.tabela {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+div.linha {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+}
+
+div.tabela > div.linha > input[type="text"] {
+    width: 200px;
+}
+
+form>textarea {
+    background-color: var(--cor5);
+    border: none;
+    border-radius: 7px;
+    color: var(--cor6);
+    font-family: 'Open Sans', 'KeepCalm', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    outline: 0;
+}
