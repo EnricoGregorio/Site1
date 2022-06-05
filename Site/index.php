@@ -14,7 +14,7 @@
     <meta name="description" content="A Coleta Seletiva é um mecanismo de recolha dos resíduos, os quais são classificados de acordo com sua origem e depositados em contentores indicados por cores. Ou seja, eles podem ser resíduos orgânicos ou materiais recicláveis como papel, plástico, vidro, dentre outros. Além deles, materiais hospitalares e radioativos têm um destino diferente.">
     <title>Pense Verde</title>
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>styles/index.css">
-    <link rel="shortcut icon" href="<?php echo INCLUDE_PATH; ?>favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
