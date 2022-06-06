@@ -1,6 +1,6 @@
 //Funções JQuery
 $(function() {
-    // Função para criar scroll dinâmico para as sessões Sobre mim, Experiências e Contato.
+    // Função para criar scroll dinâmico para as sessões Acompanhe, Sobre o Projeto e Notícias.
     $('nav a').click(function(e) {
         e.preventDefault()
         const id = $(this).attr('href'), targetOffset = $(id).offset().top

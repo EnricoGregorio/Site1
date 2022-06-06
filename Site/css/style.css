@@ -111,15 +111,71 @@ iframe {
     margin: auto;
 }
 
+div.mapa>p {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px;
+}
+
+div.mapa>p>a {
+    color: var(--cor2);
+}
+
+div.mapa>p>mark {
+    background: #cccccc5e;
+    padding: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 div.tabela {
     display: flex;
-    margin: 100px auto 0 auto;
+    margin: 200px auto 0 auto;
     max-width: 800px;
-    overflow-x:auto;
+    overflow-x: auto;
+}
+
+div.turnos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px auto;
+    max-width: 80%;
+    overflow-x: auto;
+}
+
+div.turno-m,
+div.turno-v {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+div.turnos label {
+    display: block;
+    width: 300px;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+div.turnos input[type="text"] {
+    height: 30px;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+input[type="submit"].sub-tabela {
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 1.1em;
+    background-color: var(--cor1);
+    border: none;
+    border-radius: 10px;
 }
 
 table {
-    text-align: center;
     width: 100%;
     border-collapse: collapse;
 }
@@ -135,16 +191,21 @@ table>tbody>tr {
 }
 
 td {
-    padding: 26px 5px;
+    box-sizing: border-box;
+    padding: 15px 7px;
     color: var(--cor3);
     font-size: 1.1em;
     font-weight: 500;
+    text-align: start;
+    border-right: 2px solid #ccc;
     border-bottom: 18px solid white;
     border-radius: 5px;
 }
 
 th {
     font-size: 300;
+    color: var(--cor1);
+    padding: 5px;
     background-color: white;
 }
 
@@ -167,13 +228,14 @@ section#sobre-nos {
     margin-bottom: 10px;
 }
 
-#sobre-nos p {
+.sobre {
     text-align: justify;
     color: var(--cor3);
     font-size: 1.3em;
     width: 70%;
-    margin: auto;
+    margin: 10px auto;
 }
+
 /*  FIM - Estilização da pagina SOBRE NÓS */
 
 /* Etilização da página NOTÍCIAS */
@@ -191,10 +253,6 @@ div#noticias-hub {
     margin: 0 auto;
     max-width: 1200px;
     padding: 10px;
-    /*
-    text-align: center;
-    font-family: 'KeepCalm';
-    padding: 30px 20px; */
 }
 
 div.resumo-item>h3,
@@ -241,7 +299,7 @@ span#numeracao {
     user-select: none;
 }
 
-button#anterior, 
+button#anterior,
 button#proximo {
     background-color: var(--cor2);
     border-radius: 10px;
@@ -254,14 +312,12 @@ button#proximo {
     user-select: none;
 }
 
-button#anterior:hover, 
+button#anterior:hover,
 button#proximo:hover {
-    /* background-color: #3f9e32; */
     background: transparent;
     border-radius: 10px;
     color: var(--cor2);
 }
-
 
 /*  FIM - Estilização da pagina NOTÍCIAS */
 
@@ -296,7 +352,7 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
-    background-color: var(--cor3);
+    background-color: #CCC;
 }
 
 footer div.endereco {
@@ -304,7 +360,7 @@ footer div.endereco {
 }
 
 footer address, p {
-    color: white;
+    color: var(--cor3);
     font-style: normal;
 }
 
@@ -343,6 +399,7 @@ button#return-button:active {
     background-color: var(--cor0);
     color: white;
 }
+
 /* FIM - Estilização BOTÃO RETURN */
 
 /* Estilização POSTS */
@@ -359,7 +416,7 @@ div.posts-sobre {
     padding: 30px 20px;
 }
 
-div.posts-sobre > h1 {
+div.posts-sobre>h1 {
     color: var(--cor3);
     font-size: 3em;
     font-weight: 400;
@@ -382,7 +439,7 @@ p#author {
     font-style: italic;
 }
 
-p#data, 
+p#data,
 p#home {
     color: var(--cor3);
     margin-top: 80px;
@@ -472,13 +529,17 @@ p#home>a {
             padding: 0;
         }
 
-        #sobre-nos p {
-            font-size: 1.4em;
-            text-align: justify;
+        .sobre {
+            font-size: 1em;
+            width: 90%;
         }
 
         iframe {
-            width: 80%;
+            width: 98%;
+        }
+
+        div.mapa>p {
+            font-size: 1em;
         }
 
         div#noticias-hub {
@@ -559,9 +620,9 @@ p#home>a {
             padding: 0;
         }
 
-        #sobre-nos p {
-            font-size: 1.4em;
-            text-align: justify;
+        .sobre {
+            font-size: 1em;
+            width: 90%;
         }
     }
 }

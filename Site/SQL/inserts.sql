@@ -1,4 +1,4 @@
-USE semma;
+USE dbsite;
 
 INSERT INTO Bairros(bairros)
 VALUES("-1-");

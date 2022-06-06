@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $pdo = new PDO('mysql:host=localhost;dbname=semma', 'root', '');
+    $pdo = new PDO('mysql:host=localhost;dbname=dbsite', 'root', '');
     $admin = 'admin';
     $senha = '123';
 

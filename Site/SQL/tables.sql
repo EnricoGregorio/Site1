@@ -1,6 +1,6 @@
-CREATE DATABASE semma;
+CREATE DATABASE dbsite;
 
-USE semma;
+USE dbsite;
 
 CREATE TABLE Posts(
     id INT AUTO_INCREMENT,
