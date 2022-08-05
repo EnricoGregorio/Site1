@@ -60,11 +60,11 @@
         <div class="endereco">
             <p>Prefeitura de Paragominas</p>
             <address>
-                End.: Av. do Contorno, 1212<br>
-                Centro - Paragominas - PA<br>
-                CEP: 68625-445<br>
+                End.: Rua<br>
+                Bairro - Cidade - Estado<br>
+                CEP: 00000-000<br>
             </address>
-            <p>(91) 9 3729-8037 / 3729-8038</p>
+            <p>(DDD) 9 0000-0000 / 0000-0000</p>
             <p>Horário de atendimento: 08:00 às 12:00 - 14:00 às 18:00</p>
         </div>
         <div class="rodape-img">
